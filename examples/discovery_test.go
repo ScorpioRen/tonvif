@@ -9,10 +9,10 @@ import (
 	"strings"
 	"testing"
 
+	onvif "github.com/ScorpioRen/tonvif"
 	"github.com/ScorpioRen/tonvif/device"
 	discover "github.com/ScorpioRen/tonvif/ws-discovery"
 	"github.com/beevik/etree"
-	"github.com/use-go/onvif"
 )
 
 func TestGetAvailableDevicesAtSpecificEthernetInterface(t *testing.T) {
