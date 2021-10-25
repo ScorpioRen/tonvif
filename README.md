@@ -7,7 +7,7 @@ Simple management of onvif IP-devices cameras. onvif is an implementation of  ON
 To install the library,  use **go get**:
 
 ```go
-go get github.com/use-go/onvif
+go get github.com/ScorpioRen/tonvif
 
 ```
 
@@ -46,7 +46,7 @@ dev, err := onvif.NewDevice(onvif.DeviceParams{Xaddr: "192.168.13.42:1234"})
 #### Authentication
 
 If any function of the ONVIF services requires authentication, you must use the `Authenticate` method.
-
+`
 ```go
 device := onvif.NewDevice(onvif.DeviceParams{Xaddr: "192.168.13.42:1234", Username: "username", Password: password})
 ```
@@ -100,4 +100,4 @@ resp, err := dev.CallMethod(createUsers)
 
 ## Great Thanks
 
-Enhanced and Improved from: [onvif](https://github.com/use-go/onvif)
+Enhanced and Improved from: [onvif](https://github.com/ScorpioRen/tonvif)
